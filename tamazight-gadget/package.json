@@ -1,0 +1,25 @@
+{
+  "name": "tamazight-gadget",
+  "version": "1.0.0",
+  "description": "MediaWiki gadget for creating and editing Tamazight entries",
+  "type": "module",
+  "main": "dist/gadget.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --outfile=dist/gadget.js --format=iife --minify",
+    "dev": "esbuild src/index.js --bundle --outfile=dist/gadget.js --format=iife --watch",
+    "lint": "eslint src/**"
+  },
+  "keywords": [
+    "mediawiki",
+    "gadget",
+    "tamazight",
+    "tifinagh",
+    "wikitext"
+  ],
+  "author": "",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "eslint": "^9.0.0"
+  }
+}
